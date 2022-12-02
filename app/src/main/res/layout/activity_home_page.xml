@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#b1a9f9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleY="1.07"
+            android:src="@drawable/back2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="380sp"
+        android:layout_height="410sp"
+        android:background="@drawable/sign_in_frame"
+        android:elevation="25sp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Your Destination?"
+            android:layout_marginTop="25sp"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="286dp"
+            android:layout_height="3sp"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/line2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="320sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:hint="Select Route">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropDownListID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="320sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:hint="Select Time">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropDownListTimeID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="320sp"
+            android:layout_height="wrap_content"
+            android:hint="How Many Seats?"
+            android:layout_marginTop="20sp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/seatNumberID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5sp"
+                android:inputType="number"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <android.widget.Button
+            android:id="@+id/nextToTicketConfirmationID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/customize_next_button"
+            android:text="                                                                         NEXT"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/linearlayout_bottom_color"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/hpToHomePage"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:backgroundTint="#383838"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:layout_margin="30sp"
+            android:src="@drawable/ic_bus"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/homeToTicketPageID"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_margin="30sp"
+            android:backgroundTint="#383838"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:src="@drawable/ic_ticket"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_margin="30sp"
+            android:backgroundTint="#383838"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:src="@drawable/ic_notifications"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/profileImageBtnID"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_margin="30sp"
+            android:backgroundTint="#383838"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:src="@drawable/ic_person"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

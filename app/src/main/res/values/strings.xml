@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">bRider</string>
+    <string-array name="routes">
+        <item>DSC-Dhanmondi</item>
+        <item>Dhanmondi-DSC</item>
+        <item>DSC-Uttara</item>
+        <item>Uttara-DSC</item>
+        <item>DSC-Mirpur</item>
+        <item>Mirpur-DSC</item>
+        <item>DSC-Savar</item>
+        <item>Savar-DSC</item>
+        <item>DSC-Ghat</item>
+        <item>DSC-Ghat</item>
+    </string-array>
+</resources>
